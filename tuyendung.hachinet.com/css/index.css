@@ -11,7 +11,7 @@ body {
 
 nav {
     width: 100%;
-    height: 80px;
+    min-height: 80px;
     background: #E6F0F9;
     display: flex;
     align-items: center;
@@ -40,6 +40,22 @@ nav .header-child .recruitment {
     color: white;
 }
 
+nav .header-child .col-1 {
+    width: 30%;
+}
+
+nav .header-child .col-2 {
+    width: 60%;
+}
+
+nav .header-child .col-3 {
+    width: 10%;
+}
+
+nav .header-child .mobile {
+    display: none;
+}
+
 nav .nav-link {
     list-style-type: none;
     display: flex;
@@ -56,3 +72,101 @@ nav .nav-link a {
 }
 
 /* nav */
+
+
+
+/* Các kiểu cho điện thoại di động nhỏ (nhỏ hơn 480px) */
+@media (max-width: 480px) {
+    nav .header-child {
+        width: 100%;
+        padding: 0 5%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+    }
+
+    nav .header-child .col-1 {
+        width: 100%;
+    }
+
+    nav .header-child .col-2 {
+        display: none;
+    }
+
+    nav .header-child .col-3 {
+        display: none;
+    }
+
+    nav .header-child .mobile {
+        display: block;
+    }      
+
+
+
+}
+
+/* Các kiểu cho điện thoại di động trung bình (từ 481px đến 767px) < 767 */
+@media (min-width: 481px) and (max-width: 767px) {
+     nav .header-child {
+        width: 100%;
+        padding: 0 5%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+    }
+
+    nav .header-child .col-1 {
+        width: 100%;
+    }
+
+    nav .header-child .col-2 {
+        display: none;
+    }
+
+    nav .header-child .col-3 {
+        display: none;
+    }
+
+    nav .header-child .mobile {
+        display: block;
+    }    
+}
+
+/* Các kiểu cho máy tính bảng nhỏ (từ 768px đến 1024px) < 1024 */ 
+@media (min-width: 767px) and (max-width: 1024px) {
+     
+}
+
+/* Các kiểu cho máy tính bảng lớn (từ 1025px đến 1280px) */
+@media (min-width: 1024px) and (max-width: 1280px) {
+    body {
+        font-size: 18px;
+        background-color: lightblue;
+    }
+}
+
+/* Các kiểu cho máy tính xách tay và máy tính để bàn nhỏ (từ 1281px đến 1440px) */
+@media (min-width: 1280px) and (max-width: 1440px) {
+    body {
+        font-size: 19px;
+        background-color: lightgreen;
+    }
+}
+
+/* Các kiểu cho máy tính xách tay và máy tính để bàn trung bình (từ 1441px đến 1920px) */
+@media (min-width: 1440px) and (max-width: 1920px) {
+    body {
+        font-size: 20px;
+        background-color: lightcoral;
+    }
+}
+
+/* Các kiểu cho màn hình lớn (trên 1920px) */
+@media (min-width: 1920px) {
+    body {
+        font-size: 21px;
+        background-color: lightcyan;
+    }
+}

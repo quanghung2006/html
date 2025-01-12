@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/index.css" />
-
+    <link rel="stylesheet" href="./css/slideMenu.css" />
     <title></title>
 </head>
 
@@ -16,9 +16,9 @@
         <div class="header-child">
 
             <div class="col-1">
-
-                <img class="image-header" src="https://tuyendung.hachinet.com/client/images/Hachinet Software Long (Yellow).png"
-                    alt="hachinet tuyen dung"/>
+                <img class="image-header"
+                    src="https://tuyendung.hachinet.com/client/images/Hachinet Software Long (Yellow).png"
+                    alt="hachinet tuyen dung" />
             </div>
 
             <div class="col-2">
@@ -33,57 +33,69 @@
             </div>
 
             <div class="col-3">
-                <a class="recruitment">Tuyển Dụng</a>
-
+                <a href="./contact.html" class="recruitment">Liên hệ</a>
             </div>
 
+            <div class="mobile">
 
+                <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
 
+                <div id="mySidenav" class="sidenav">
+                    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
 
+                    <img class="image-header"
+                        src="https://tuyendung.hachinet.com/client/images/Hachinet Software Long (Yellow).png"
+                        alt="hachinet tuyen dung" />
 
+                    <a href="#">About</a>
+                    <a href="#">Services</a>
+                    <a href="#">Clients</a>
+                    <a href="#">Contact</a>
+                </div>
+
+            </div>
 
         </div>
 
     </nav>
+
     <section class="section-search" style="height: 922px;background:#E6F5F9;">
-     <h1>"Công Việc"
-        <br>
-       <div></div>  </div> 
-       
-  
-
-     </h1>
-
+        <h1>"Công Việc"</h1>
 
     </section>
-
 
     <section class="section-category-work" style="height: 564px;background:#989 ;text-align: center;">
         <h1>Danh mục việc làm</h1>
 
     </section>
 
-
     <section class="section-partner" style="height: 922px;background: #a12828;">
-
 
     </section>
 
     <section class="section-news" style="height: 922px;background: #a12828;">
 
-
     </section>
 
     <section class="section-register" style="height: 922px;background: #a12828;">
-
 
     </section>
 
     <footer>
 
-
     </footer>
 
+
+
+    <script>
+        function openNav() {
+            document.getElementById("mySidenav").style.width = "250px";
+        }
+
+        function closeNav() {
+            document.getElementById("mySidenav").style.width = "0";
+        }
+    </script>
 </body>
 
 </html>
