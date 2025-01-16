@@ -2,26 +2,28 @@
 
 html,
 body {
+    
     margin: 0;
     padding: 0;
     font-family: "Poppins", -apple-system, BlinkMacSystemFont, "Segoe UI",
         "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji",
         "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-        
+    background: #e5d7d7;    
 }
 
 nav {
     width: 100%;
     min-height: 80px;
-    background: #E6F0F9;
+    background: #eaedee;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    
 }
 
 nav .header-child {
     width: 100%;
-    padding: 0 7%;
+    padding: 0%;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -30,8 +32,8 @@ nav .header-child {
 }
 
 nav .header-child .image-header {
-    width: 160px;
-    height: 60px;
+    width: 199px;
+    height:80px;
 }
 
 nav .header-child .recruitment {
@@ -133,6 +135,7 @@ nav .nav-link a {
     nav .header-child .mobile {
         display: block;
     }    
+     
 }
 
 /* Các kiểu cho máy tính bảng nhỏ (từ 768px đến 1024px) < 1024 */ 
@@ -159,8 +162,9 @@ nav .nav-link a {
 /* Các kiểu cho máy tính xách tay và máy tính để bàn trung bình (từ 1441px đến 1920px) */
 @media (min-width: 1440px) and (max-width: 1920px) {
     body {
+        height: 20%;
         font-size: 20px;
-        background-color: lightcoral;
+        background-color: #e6f0f9
     }
 }
 
@@ -170,9 +174,9 @@ nav .nav-link a {
         font-size: 21px;
         background-color: lightcyan;
     }
+
 }
-table col-12{
-   
+  body table col-12{
    border-collapse: separate ;
    border-spacing: 3 ;
    border: 2px solid #ffffff ;
@@ -184,6 +188,23 @@ table col-12{
 }
 th,td {
   padding: 1px;
-  border: 3px solid #de3d3d;
+  border: 3px solid #e5d7d7;
   border-radius :15px;    
+}
+
+element.style col-13  {
+  width: 100px;  
+  margin-right: 40px;
+}
+ .pxp-hero-form-round form button col-4 {
+ width: 54px;
+ height: 54px;
+ border: 0 none ;
+ margin-right: 13px;
+ border-radius: 27px;
+ color: #fff;
+ background-color: #ffb701 ;
+ transition: cubic-bezier(0.23, 1, 0.320, 1);
+ transition-property: background-color ;
+
 }
