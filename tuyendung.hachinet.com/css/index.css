@@ -2,43 +2,50 @@
 
 html,
 body {
-    
     margin: 0;
     padding: 0;
     font-family: "Poppins", -apple-system, BlinkMacSystemFont, "Segoe UI",
         "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji",
         "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-    background: #e5d7d7;    
+    background: #e5d7d7;
+    list-style: 2;
 }
 
 nav {
     width: 100%;
     min-height: 80px;
-    background: #eaedee;
+    background: #e6f0f9;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    
+
+
 }
 
 nav .header-child {
+
     width: 100%;
-    padding: 0%;
+    padding: 0 7% 0 7%;
+
     display: flex;
     align-items: center;
     justify-content: space-between;
+    display: flex;
 
 
 }
 
 nav .header-child .image-header {
-    width: 199px;
-    height:80px;
+    width: 160px;
+    height: 60px;
 }
 
 nav .header-child .recruitment {
-    padding: 10px 15px;
+    padding: 6px 12px;
+    text-decoration: none;
     border-radius: 50rem !important;
+    font-size: 16px;
+    font-weight: 500;
     background: #ffb701;
     color: white;
 }
@@ -63,7 +70,7 @@ nav .nav-link {
     list-style-type: none;
     display: flex;
     align-items: center;
-    gap: 3rem;
+
 
 }
 
@@ -72,6 +79,24 @@ nav .nav-link a {
     color: #17171d;
     font-weight: 500;
     font-size: 15px;
+    padding: 10px 20px;
+}
+/* 
+.popular-search {
+    width: 65%;
+} */
+
+.popular-search .item {
+    line-height: 1.5;
+}
+
+.popular-search .item a {
+    height: 33.5px;
+    background-color: #dae9f6;
+    padding: 7px 17px;
+    border-radius: 50px;
+    font-size: 13px;
+    
 }
 
 /* nav */
@@ -103,7 +128,7 @@ nav .nav-link a {
 
     nav .header-child .mobile {
         display: block;
-    }      
+    }
 
 
 
@@ -111,7 +136,7 @@ nav .nav-link a {
 
 /* Các kiểu cho điện thoại di động trung bình (từ 481px đến 767px) < 767 */
 @media (min-width: 481px) and (max-width: 767px) {
-     nav .header-child {
+    nav .header-child {
         width: 100%;
         padding: 0 5%;
         display: flex;
@@ -134,14 +159,12 @@ nav .nav-link a {
 
     nav .header-child .mobile {
         display: block;
-    }    
-     
+    }
+
 }
 
-/* Các kiểu cho máy tính bảng nhỏ (từ 768px đến 1024px) < 1024 */ 
-@media (min-width: 767px) and (max-width: 1024px) {
-     
-}
+/* Các kiểu cho máy tính bảng nhỏ (từ 768px đến 1024px) < 1024 */
+@media (min-width: 767px) and (max-width: 1024px) {}
 
 /* Các kiểu cho máy tính bảng lớn (từ 1025px đến 1280px) */
 @media (min-width: 1024px) and (max-width: 1280px) {
@@ -176,35 +199,84 @@ nav .nav-link a {
     }
 
 }
-  body table col-12{
-   border-collapse: separate ;
-   border-spacing: 3 ;
-   border: 2px solid #ffffff ;
-   border-radius: 50%;
-   width:10px;
-   height: 5px;
-   overflow: hidden;
-   text-align: center;
-}
-th,td {
-  padding: 1px;
-  border: 3px solid #e5d7d7;
-  border-radius :15px;    
+
+body table col-12 {
+    border-collapse: separate;
+    border-spacing: 3;
+    border: 2px solid #ffffff;
+    border-radius: 50%;
+    width: 10px;
+    height: 5px;
+    overflow: hidden;
+    text-align: center;
 }
 
-element.style col-13  {
-  width: 100px;  
-  margin-right: 40px;
+th,
+td {
+    padding: 1px;
+    border: 3px solid #e5d7d7;
+    border-radius: 15px;
 }
- .pxp-hero-form-round form button col-4 {
- width: 54px;
- height: 54px;
- border: 0 none ;
- margin-right: 13px;
- border-radius: 27px;
- color: #fff;
- background-color: #ffb701 ;
- transition: cubic-bezier(0.23, 1, 0.320, 1);
- transition-property: background-color ;
 
+element.style {
+    width: 100px;
+    margin-right: 40px;
 }
+
+.pxp-hero-form-round form button col-4 {
+    width: 54px;
+    height: 54px;
+    border: 0 none;
+    margin-right: 13px;
+    border-radius: 27px;
+    color: #fff;
+    background-color: #ffb701;
+    transition: cubic-bezier(0.23, 1, 0.320, 1);
+    transition-property: background-color;
+}
+
+section {
+    margin: 20px;
+    padding: 80px;
+    font-size: 25px;
+    line-height: 72px;
+}
+
+a {
+    font-size: 20px;
+}
+
+p {
+    border-radius: 200px !important;
+    font-weight: 20px;
+    padding: 8px;
+    background: #e6f0f9;
+    font-size: 20px;
+}
+
+i {
+    background-color: #ffb701;
+    width: 54px;
+    height: 54px;
+    margin-right: 50px;
+    border-radius: 50rem !important;
+}
+
+b {
+    background-color: rgb(9 105 195 / 5%);
+    color: #17171d;
+    padding: 7px 17px;
+    border-radius: 50px;
+    margin-right: 30px;
+    margin-bottom: 10px;
+    font-size: 13px;
+}
+
+tr {
+    width: 100%;
+    display: block;
+    font-size: 20px;
+    margin: 20px;
+    padding: 20px;
+}
+
