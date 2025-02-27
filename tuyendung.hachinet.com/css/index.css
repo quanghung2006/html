@@ -1,3 +1,5 @@
+/* nav */
+
 html,
 body {
     margin: 0;
@@ -9,25 +11,7 @@ body {
     list-style: 2;
 }
 
-section {
-    margin: 20px;
-    padding: 80px;
-    font-size: 25px;
-    line-height: 72px;
-}
-
-.button {
-    background-color: #ffb701;
-    border-radius: 40px;
-    margin: 60px;
-    z-index: 5;
-    position: relative;
-    width: 40%;
-    height: 200px
-}
-
-/* start styles header */
-.header {
+nav {
     width: 100%;
     min-height: 80px;
     background: #e6f0f9;
@@ -38,7 +22,7 @@ section {
 
 }
 
-.header .header-child {
+nav .header-child {
 
     width: 100%;
     padding: 0 7% 0 7%;
@@ -51,12 +35,12 @@ section {
 
 }
 
-.header .header-child .image-header {
+nav .header-child .image-header {
     width: 160px;
     height: 60px;
 }
 
-.header .header-child .recruitment.recruitment {
+nav .header-child .recruitment.recruitment {
     padding: 6px 12px;
     text-decoration: none;
     border-radius: 50rem !important;
@@ -66,23 +50,23 @@ section {
     color: white;
 }
 
-.header .header-child .col-1 {
+nav .header-child .col-1 {
     width: 30%;
 }
 
-.header .header-child .col-2 {
+nav .header-child .col-2 {
     width: 60%;
 }
 
-.header .header-child .col-3 {
+nav .header-child .col-3 {
     width: 10%;
 }
 
-.header .header-child .mobile {
+nav .header-child .mobile {
     display: none;
 }
 
-.header .nav-link {
+nav .nav-link {
     list-style-type: none;
     display: flex;
     align-items: center;
@@ -90,7 +74,7 @@ section {
 
 }
 
-.header .nav-link a {
+nav .nav-link a {
     text-decoration: none;
     color: #17171d;
     font-weight: 500;
@@ -98,21 +82,16 @@ section {
     padding: 10px 20px;
 }
 
-/* end styles header */
+/* 
+.popular-search {
+    width: 65%;
+} */
 
-
-/* start styles section-search */
-
-.section-search {
-    position: relative;
-    overflow: hidden;
-}
-
-.section-search .popular-search .item {
+.popular-search .item {
     line-height: 1.5;
 }
 
-.section-search .popular-search .item a {
+.popular-search .item a {
     height: 33.5px;
     background-color: #dae9f6;
     padding: 7px 17px;
@@ -121,7 +100,36 @@ section {
 
 }
 
-.section-search .pxp-hero-form-round form button col-4 {
+/* nav */
+
+
+
+
+
+body table col-12 {
+    border-collapse: separate;
+    border-spacing: 3;
+    border: 2px solid #ffffff;
+    border-radius: 50%;
+    width: 10px;
+    height: 5px;
+    overflow: hidden;
+    text-align: center;
+}
+
+th,
+td {
+    padding: 1px;
+    border: 3px solid #e5d7d7;
+    border-radius: 15px;
+}
+
+element.style {
+    width: 100px;
+    margin-right: 40px;
+}
+
+.pxp-hero-form-round form button col-4 {
     width: 54px;
     height: 54px;
     border: 0 none;
@@ -133,14 +141,79 @@ section {
     transition-property: background-color;
 }
 
+section {
+    margin: 20px;
+    padding: 80px;
+    font-size: 25px;
+    line-height: 72px;
+}
+
+/* a {
+    font-size: 20px;
+}
+
+p {
+    border-radius: 200px !important;
+    font-weight: 20px;
+    padding: 8px;
+    background: #e6f0f9;
+    font-size: 20px;
+}
+
+i {
+    background-color: #ffb701;
+    width: 54px;
+    height: 54px;
+    margin-right: 50px;
+    border-radius: 50rem !important;
+}
+
+b {
+    background-color: rgb(9 105 195 / 5%);
+    color: #17171d;
+    padding: 7px 17px;
+    border-radius: 50px;
+    margin-right: 30px;
+    margin-bottom: 10px;
+    font-size: 13px;
+}
+
+tr {
+    width: 100%;
+    display: block;
+    font-size: 20px;
+    margin: 20px;
+    padding: 20px;
+}
+
+.item {
+    text-decoration: none;
+}
+
+p {
+    font-size: 13px;
+    margin-right: 30%;
+
+} */
+
+/* css Danh sách việc làm */
+.section-search{
+    position: relative;
+    overflow: hidden;
+}
+.button{
+    background-color: #ffb701;
+    border-radius: 40px;
+    margin: 60px;
+    z-index: 5;
+    position: relative;
+    width: 40%;
+    height: 200px
+}
 
 
+/* css Danh sách việc làm */
 
-/* end styles section-search */
-
-
-
-/* start styles section-category-work */
 .section-category-work .item-parent-job {
     background: #fff8ec;
     width: 100%;
@@ -225,6 +298,8 @@ section {
 
 }
 
+
+
 .section-category-work .item-parent-job .item-job .job-card-bottom .left p {
     line-height: normal;
     text-align: left;
@@ -253,51 +328,50 @@ section {
     height: 80px;
 }
 
-/* end styles section-category-work */
 
-
-/* start styles section-job-directory */
-
-.job-directory .table  {
+ /* strart job-directory   */
+ .section-news .close{
     display: flex;
-    margin-top: 60px;
-    --bs-gutter-x: 1.5rem;
-}
-.job-directory .table .d1{
+ }
 
+ .job-directory .d1{
     background: #e6f0f9;
     width: 15%;
     height: 230px;
-    text-align: center;
+     text-align: center;
     border-radius: 30px;
+    --bs-gutter-x: 1.5rem;
 }
-.job-directory .table .d1 .home{
+.job-directory .d1 .home{
     font-size: 18px;
 }
-.job-directory .table .d1 .home .job{
+.job-directory .d1 .home .job{
     margin-top: 30px;
     font-size: 15px;
 }
-.job-directory .table .d1 .home .job .code{
+ .quantity{
     font-size: 14px;
     margin-top: -25px;
 }
-/* end styles section-job-directory */
+ /* end job-directory   */
 
 
-/* start styles section-news */
-
-.section-news .row{
-    display: flex;
-    justify-content: space-between;
-    height: 29%;
-   
+  /* strart section-news  */
+.section-news .cafe{
+    font-weight: 700;
+    font-size: 48px;
+    letter-spacing: -2px;
+    text-align: center;
 }
-.section-news .row .layout{
+.section-news .cafe .o{
+    text-align: center;
+    margin: -1%;
+    font-size: 14px;
+}
+.layout{
     background-color: #fff;
     padding: 20px;
     border-radius: 30px;
-    text-decoration: none;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -307,106 +381,68 @@ section {
     box-sizing: border-box;
     width: 24%;
 }
-.section-news .row .layout .edm{
+.edm{
     height: 57px;
-    border-radius: 16p;
+    border-radius: 16px;
 }
-.section-news .row .layout .edm .many{
-     font-size: 14px;
-}
-.section-news .row .layout .edm .many .text-light{
-    margin-top: -60px;
-    font-size: 17px;
-
-}
-.section-news .row .layout .edm .many .text-light .pxp-text-light{
+ .pxp-text-light{
     font-size: 14px;
     margin-top: -30px;
-    text-align: center;
-    display: contents;
-
+    text-align: initial;
 }
-.section-news .row .layout .edm .many .text-light .pxp-text-light .mill{
-    font-size: 15px;
-    margin-top: 25px;
-    font-weight: 500;
-
-}
-/* end styles section section-news */
+ /* end  section-news    */
 
 
-/* start styles section-register */
-.section-register .text .text-center {
- text-align: center;
+.bcr{
+ font-size: 14;
 }
-.section-register .text .text-center.new {
-    display: block;
-    font-weight: 600;
-    color: var(--pxpTextColor);
-    font-size: 18px;
-    transition: var(--pxpHoverTransition);
-    transition-property: color;
-    text-decoration: none;
-    padding: 21px;
-}
-.section-register .text .text-center.new .dumbbell  {
-    font-size: 13px;
-    padding: 27px;
-    text-align: center;
-}
-.section-register .text .text-center.new .dumbbell .akay
-
-.text-light {
-    margin-top: -60px;
-    font-size: 17px;
-}
-.cafe {
-    font-weight: 700;
-    font-size: 48px;
-    letter-spacing: -2px;
-    text-align: center;
-}
-.o {
-    text-align: center;
-    margin: -1%;
-    font-size: 14px;
-}
-.pxp-text-light {
-    font-size: 14px;
-    margin-top: -30px;
-    text-align: center;
-    display: contents;
-
-}
-.dumbbell {
-    font-size: 13px;
-    padding: 27px;
+.row{
+    display: flex;
+    justify-content: space-between;
+    height: 29%;
 }
 
-.new {
-    display: block;
-    font-weight: 600;
-    color: var(--pxpTextColor);
-    font-size: 18px;
-    transition: var(--pxpHoverTransition);
-    transition-property: color;
-    text-decoration: none;
-    padding: 21px;
 
-}
 
-.item-new {
+ /* strat section-register   */
+ .section-register {
+   height:722px;
+   background:#fff;
+   padding: 40px;
+ } 
+.one{
     border: 1px solid;
-    width: 26%;
-    line-height: 1;
     border-radius: 30px;
-    height: 550px;
-    margin: 10px;
+    width:95%;
+    height:255%;
+ 
 }
 
+ .section-register .dog{
+    background:#e6f0f9;
+    border-radius: 30px ;
+    width:100%;
+ } 
+ .section-register .dog .iphone{
+    font-size: 13px;
+    font-weight: initial;
+    margin-left: 5%;
+ }
+ .aqua{
+   font-size: 14px;
+   margin-top: 10px;
+   line-height: 1.2;
+   margin-top: 20px;
+   margin-left: 25px;
+ }
+ .smatphone{
+   margin-top: -50px;
+ }
+/* end section-register   */
 
-.input-group {
 
+ /* strat chief  */
+ .chief .input-group{   
     position: relative;
     display: flex;
     flex-wrap: wrap;
@@ -417,19 +453,15 @@ section {
     border-radius: 30px;
     padding: 16px 20px;
 }
-.button {
-    background: yellow;
-
-}
-
-.text-center {
+.chief .input-group .ba{
     text-align: center;
 }
+/* end chief   */
 
 
 /* Các kiểu cho điện thoại di động nhỏ (nhỏ hơn 480px) */
 @media (max-width: 480px) {
-    .header .header-child {
+    nav .header-child {
         width: 100%;
         padding: 0 5%;
         display: flex;
@@ -438,19 +470,19 @@ section {
 
     }
 
-    .header .header-child .col-1 {
+    nav .header-child .col-1 {
         width: 100%;
     }
 
-    .header .header-child .col-2 {
+    nav .header-child .col-2 {
         display: none;
     }
 
-    .header .header-child .col-3 {
+    nav .header-child .col-3 {
         display: none;
     }
 
-    .header .header-child .mobile {
+    nav .header-child .mobile {
         display: block;
     }
 
@@ -460,7 +492,7 @@ section {
 
 /* Các kiểu cho điện thoại di động trung bình (từ 481px đến 767px) < 767 */
 @media (min-width: 481px) and (max-width: 767px) {
-    .header .header-child {
+    nav .header-child {
         width: 100%;
         padding: 0 5%;
         display: flex;
@@ -469,19 +501,19 @@ section {
 
     }
 
-    .header .header-child .col-1 {
+    nav .header-child .col-1 {
         width: 100%;
     }
 
-    .header .header-child .col-2 {
+    nav .header-child .col-2 {
         display: none;
     }
 
-    .header .header-child .col-3 {
+    nav .header-child .col-3 {
         display: none;
     }
 
-    .header .header-child .mobile {
+    nav .header-child .mobile {
         display: block;
     }
 
