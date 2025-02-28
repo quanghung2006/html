@@ -452,11 +452,38 @@ p {
     height: 50px;
     border-radius: 30px;
     padding: 16px 20px;
+
 }
 .chief .input-group .ba{
     text-align: center;
 }
 /* end chief   */
+
+
+ /* strat footer  */
+
+ .Introduction{
+    font-size: 14px;
+ }
+ .Introduction .footer-hachinet{
+    font-size: 30px;
+    font-weight: 700;
+ }
+ .Introduction .footer-hachinet .footer-Address{
+    display: block;
+    font-weight: 500;
+ }
+ .Introduction .footer-list{
+    padding-left: 0;
+    list-style: none;
+ }
+ 
+
+  
+
+
+
+
 
 
 /* Các kiểu cho điện thoại di động nhỏ (nhỏ hơn 480px) */
